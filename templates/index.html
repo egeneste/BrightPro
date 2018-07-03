@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bright</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- FONTAWESOME STYLES-->
+    <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet"/>
+    <!-- CUSTOM STYLES-->
+    <link href="{% static 'assets/css/custom.css' %}" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body style="background-color: aliceblue">
+
+    <!-- Navigation -->
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-expand bg-success" >
+
+      <div class="container" >
+        <a class="navbar-brand" href="index.html" style="color: white">BRIGHT</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/bright/" style="color: white">Home</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="." style="color: white">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bright/team" style="color: white">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                ...
+              </a>
+ <!--             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="{% static 'portfolio-1-col.html' %}">1 Column Portfolio</a>
+                <a class="dropdown-item" href="{% static 'portfolio-2-col.html' %}">2 Column Portfolio</a>
+                <a class="dropdown-item" href="{% static 'portfolio-3-col.html' %}">3 Column Portfolio</a>
+                <a class="dropdown-item" href="{% static 'portfolio-4-col.html' %}">4 Column Portfolio</a>
+                <a class="dropdown-item" href="{% static 'portfolio-item.html' %}">Single Portfolio Item</a>
+              </div>-->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                ...
+              </a>
+  <!--            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="{% static 'blog-home-1.html' %}">Blog Home 1</a>
+                <a class="dropdown-item" href="{% static 'blog-home-2.html' %}">Blog Home 2</a>
+                <a class="dropdown-item" href="{% static 'blog-post.html' %}">Blog Post</a>
+              </div>-->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                ...
+              </a>
+   <!--           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="{% static 'full-width.html' %}">Full Width Page</a>
+                <a class="dropdown-item" href="{% static 'sidebar.html' %}">Sidebar Page</a>
+                <a class="dropdown-item" href="{% static 'faq.html' %}">FAQ</a>
+                <a class="dropdown-item" href="{% static '404.html' %}">404</a>
+                <a class="dropdown-item" href="{% static 'pricing.html' %}">Pricing Table</a>
+              </div>-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+{% block Carousel %}
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+              <img src="{% static 'casual/img/imagen4.jpg' %}" alt="Chicago" width="100%" height="100%">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Medical care</h3>
+              <p>Clinical ... on July 30</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+              <img src="{% static 'casual/img/imagen1.jpg' %}" alt="Chicago" width="100%" height="100%">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Laboratory</h3>
+              <p>Bright reasearh lab</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+              <img src="{% static 'casual/img/imagen2.jpg' %}" alt="Chicago" width="100%" height="100%">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Administrative Building</h3>
+              <p>Santiago</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+              <img src="{% static 'casual/img/imagen3.jpg' %}" alt="Chicago" width="100%" height="100%">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Dormitory</h3>
+              <p>Santiago.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+              <img src="{% static 'casual/img/c2.jpg' %}" alt="Chicago" width="100%" height="100%">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Container house</h3>
+              <p>A good place to take a rest</p>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+{%  endblock Carousel %}
+
+ <!-- Page Content -->
+  {% block PageContent %}
+    <section class="page-section clearfix" >
+
+    <div class="container">
+      <h1 class="my-4">Welcome to BRIGHT</h1>
+        <h3 class="my-3">BRING RESTORATION AND ISONOMY GLOBALLY TO HOUSEHOLDS IN TROUBLE</h3>
+        <div class="intro">
+
+          <img class="intro-img img-fluid mb-sm-0 rounded" src="{% static 'casual/img/presidenteBright.jpg' %}" alt="" >
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h5 class="section-heading mb-4">
+             <!-- <span class="section-heading-upper">Fresh Coffee</span>-->
+                <span class="section-heading-upper">Mission</span>
+            </h5>
+            <p class="mb-3">Seeking to put God’s love into action, Habitat for Humanity brings people together to build homes, communities and hope.</p>
+            <h3 class="section-heading mb-4">
+
+             <!-- <span class="section-heading-upper">Fresh Coffee</span>-->
+              <span class="section-heading-upper">Our Vision:</span>
+            </h3>
+            <p class="mb-3">Every person has the opportunity to achiev
+                            e his/her fullest potential and participate in and contribute to
+                            all aspects of life.</p>
+         <!--   <div class="intro-button mx-auto">
+              <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+            </div>-->
+          </div>
+        </div>
+</div>
+    </section>
+    <section class="page-section cta" style="background-color: darkseagreen">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <!--<span class="section-heading-upper">Vision</span>-->
+                <span class="section-heading-lower">Values</span>
+              </h2>
+                <ul style="text-align: left">
+                    <li>Respect: We treat all people with dignity and respect.</li>
+                    <li>Stewardship: We honor our heritage by being socially, financially and environmentally responsible.</li>
+                    <li>Ethics: We strive to meet the highest ethical standards</li>
+                    <li>Learning: We challenge each other to strive for excellence and to continually learn.</li>
+                    <li>Innovation: We embrace continuous improvement, bold creativity and change</li>
+                </ul>
+              <p class="mb-0"> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock PageContent %}
+    <!-- Footer -->
+    <footer class="footer text-faded text-left py-5" style="background-color: forestgreen; color: white;">
+      <div class="row">
+          <div class="col-2 col-md-1" style="text-align: left"></div>
+         <div class="col-6 col-md" >
+          <h5></h5>
+               <ul>
+                    <li>Autopista Duarte Km 1 1/2</li>
+                    <li>Santiago, República Dominicana.</li>
+                    <li>Tel.: (809) 580-1962</li>
+                    <li>Fax: (809) 582-4549</li>
+                </ul>
+        </div>
+        <div class="col-6 col-md" >
+          <h5></h5>
+            <ul>
+                <li>Abraham Lincoln esq. Simón Bolívar</li>
+                <li>Santo Domingo, República Dominicana.</li>
+                <li>Tel.: (809) 535-0111</li>
+                <li>Fax: (809) 534-7060</li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5></h5>
+            <ul>
+                <li>Calle Separación No.2</li>
+                <li>Puerto Plata, República Dominicana.</li>
+                <li>Tel.: (809) 586-2060</li>
+                <li>Fax: (809) 586-8246</li>
+            </ul>
+            <address></address>
+        </div>
+        <div class="col-6 col-md">
+          <h5></h5>
+            <li>
+                <a href="http://www.facebook.com/pucmm/" target="_blank">
+                    <i class="fa fa-facebook fa-2x co" id="blanc">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/pucmm/" target="_blank">
+                    <i class="fa fa-twitter" id="blanc">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/pucmmtv/" target="_blank">
+                    <i class="fa fa-youtube-play" id="blanc">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.instagram.com/pucmm" target="_blank">
+                    <i class="fa fa-instagram" id="blanc">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/edu/school?id=12020" target="_blank">
+                    <i class="fa fa-linkedin" id="blanc">
+                    </i>
+                </a>
+            </li>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
